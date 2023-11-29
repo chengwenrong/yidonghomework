@@ -33,6 +33,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/User/User",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationStyle" : "custom"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -59,5 +69,26 @@
 				"query": "" //启动参数，在页面的onLoad函数里面得到
 			}
 		]
-	}
+	},
+		"tabBar": {
+			"color": "618E39",
+			"selectedColor": "FF1031",
+			"list": [
+		{
+			"text": "首页",
+			"pagePath": "pages/index/index",
+			"selectedIconPath": "./static/index01.jpg"
+		},
+		{
+			"text": "导航栏",
+			"pagePath": "pages/search/search",
+			"selectedIconPath": "static/nav02.webp"
+		},
+		{
+			"text": "演唱会",
+			"pagePath": "pages/User/User",
+			"selectedIconPath": "static/user01.webp"
+		}
+			]
+		}
 }

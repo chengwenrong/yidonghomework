@@ -20,17 +20,6 @@
 					</m-for-skeleton>
 				</view>
 				<view class="index-list" v-else>
-					<!-- <view class="index-list-item">
-						<view class="index-list-img">
-							<image src="../../static/wangyiyunyinyue.png" mode=""></image>
-							<text>每天更新</text>
-						</view>
-						<view class="index-list-text">
-							<view>1.与我无关 - 阿冗</view>
-							<view>1.与我无关 - 阿冗</view>
-							<view>1.与我无关 - 阿冗</view>
-						</view>
-					</view> -->
 					<view class="index-list-item" v-for="(item,index) in topList" :key="index" @tap="handleToList(item.id)">
 					 	<view class="index-list-img">
 							<image :src="item.coverImgUrl" mode=""></image>

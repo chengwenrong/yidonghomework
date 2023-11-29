@@ -1,5 +1,6 @@
 <template>
-	<view class="music-head" :style="{ color : color }">
+	<!-- <view class="music-head" :style="{ color : color ;}"> -->
+     <view class="music-head" style="background-color:darksalmon ;font-size:x-large;" :style="{color:color}">
 		<view v-if="icon" class="music-head-icon" :class="{ 'music-head-iconblack' : iconblack }">
 			<text class="iconfont iconzuojiantou-copy" @tap="handleToBack"></text> | <text class="iconfont iconshouye" @tap="handleToHome"></text>
 		</view>
